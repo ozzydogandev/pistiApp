@@ -1,0 +1,27 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 90vh;
+}
+.rival-hand{
+    display: flex;
+    justify-content: center;
+}
+.player-hand{
+    display: flex;
+    justify-content: center;
+    bottom: 1123130;
+}
+.rival-hand-cards,
+.player-hand-cards {
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    text-align: center;
+}
