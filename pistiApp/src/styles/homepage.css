@@ -1,0 +1,50 @@
+h1{
+    font-family: "Permanent Marker", serif;
+}
+p{
+    font-family: "Teko", serif;
+}
+.homepage-container{
+    
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    min-height: 100dvh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Ensure consistent box model */
+}
+.title{
+    font-size: 50px;
+}
+.creators-text{
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: -10px;
+}
+.top-images{
+    display: flex; /* Enables flexbox */
+    justify-content: space-between; /* Distributes images evenly */
+    width: 100%; /* Occupy full width */
+    max-width: 600px; /* Optional: Set a maximum width */
+    margin-bottom: 20px; /* Add spacing below images */
+}
+.logo-left{
+    height: 150px;
+}
+.logo-right{
+    height: 100px;
+    margin-top: 20px;
+    margin-right: 10px;
+    
+}
+.homepage-content{
+    margin-top: -180px;
+    text-align: center;
+}
+.start-button{
+    margin-top: 60px;
+    color: black;
+    background-color: aliceblue;
+}
