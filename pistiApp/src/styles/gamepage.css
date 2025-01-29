@@ -5,23 +5,30 @@
     box-sizing: border-box;
     height: 90vh;
 }
-.rival-hand{
+.rival-hand, .player-hand{
     display: flex;
     justify-content: center;
 }
-.player-hand{
-    display: flex;
-    justify-content: center;
-    bottom: 1123130;
+.rival-hand .card-image,
+.player-hand .card-image {
+    height: 180px;
+    margin-left: -50px; /* Adjust for overlap */
+    transition: transform 0.2s ease-in-out;
 }
-.rival-hand-cards,
-.player-hand-cards {
-    margin: 0 10px;
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius: 5px;
-    
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: 18px;
-    text-align: center;
+.rival-hand .card-image:first-child,
+.player-hand .card-image:first-child {
+    margin-left: 0;
+}
+.center-card {
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Hide the card from its original hand when selected */
+.hidden {
+    visibility: hidden;
 }
